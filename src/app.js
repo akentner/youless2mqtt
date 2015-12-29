@@ -55,7 +55,6 @@ mqttConnection.on('connect', function () {
     });
 
     Youless.on('data', function(data) {
-        //console.log(data);
         data = JSON.parse(data);
         Object.keys(data).forEach(function(key) {
             mqttConnection.publish(topicPrefix + '/status/' + key, data[key]+'', {retain: retain, qos: qos});
