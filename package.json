@@ -1,4 +1,4 @@
-  {
+{
   "name": "youless2mqtt",
   "version": "0.1.0",
   "description": "Interface between Youless engery logger and MQTT",
